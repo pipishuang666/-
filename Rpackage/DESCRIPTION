@@ -1,0 +1,19 @@
+Package: Rpackage
+Type: Package
+Title: fibonacci practice
+Version: 0.1.0
+Author: Shuang Wang
+Maintainer: Shuang Wang<759854242@qq.com>
+Description: Practice fibonacci functions and compare running speeds
+License: none
+Encoding: UTF-8
+LazyData: true
+Imports:
+    Rcpp,
+RoxygenNote: 7.2.0
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3

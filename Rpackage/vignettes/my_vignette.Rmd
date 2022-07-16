@@ -1,0 +1,37 @@
+---
+title: "my_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>
+  
+目的：
+
+​	比较使用R语言编译函数与在R语言中使用Rcpp编译C++函数二者的运行速度。
+
+所做工作：
+
+​	1.撰写两个fibonacci函数，分别保存在R文件夹下的fibonacci.R文档和fibonacci_c.cpp文档中；
+
+​	2.使用proc.time()函数获取系统时间，借此得出一段程序体运行完毕所需时间，从而比较上述两个函数的运行速度。
+
+结论：
+
+​	1.使用R语言编写的函数在n=39的情况下，运行完毕所需时间为100-200s。
+
+​	2.使用Rcpp编译C++函数在n=39的情况下，运行完毕所需时间为0-0.3s。
+
+​	3.使用Rcpp编译的C++函数运行效率是使用R语言编写函数的数百倍。"
+)
+```
+
+```{r setup}
+library(Rpackage)
+```
